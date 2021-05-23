@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 //
@@ -6,7 +7,32 @@ import java.awt.event.ActionListener;
 //поэтому данные действия пришлось оставить в классе Constr
 //
 
-public class Perform extends Constr implements ActionListener {
+public class Perform implements ActionListener {
+    JButton b1;
+    JButton b2;
+    JTextField tf;
+    String text;
+    JButton c;
+    JButton plus;
+    JButton umn;
+    JButton result;
+    int x;
+    int y;
+    int z;
+    Perform(JButton b1, JButton b2, JTextField tf, String text, JButton c, JButton plus, JButton umn,
+            JButton result, int x, int y, int z){
+        this.b1 = b1;
+        this.b2 = b2;
+        this.tf = tf;
+        this.text = text;
+        this.c = c;
+        this.plus = plus;
+        this.umn = umn;
+        this.result = result;
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
     @Override
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == b1){

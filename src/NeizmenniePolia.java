@@ -17,4 +17,5 @@ abstract class NeizmenniePolia {
     int y;
     int z;
     Font font = new Font("", Font.BOLD, 24);
+
 }
